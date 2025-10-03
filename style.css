@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The body of the page*/
+body{
+    min-height: 100vh; /* To fill the screen*/
+    background: radial-gradient(ellipse, white, rgb(247, 78, 162));
+    
+}
+.app{
+    background: radial-gradient(ellipse, white, rgb(243, 5, 132), #1414f1);
+    width: 90%; 
+    max-width: 500px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+.app h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    color: #000080;
+    font-weight: 600;
+    border-bottom: 1.5px solid #000000;
+    padding-bottom: 20px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 28px;
+    color: #001e4d;
+    font-weight: bold;
+    font-family: sans-serif, Arial, Helvetica;
+}
+/* Answer buttons*/
+.btn{
+    background: #f5f5f5;
+    color: #222;
+    font-weight: 600;
+    width: 95%;
+    border: 2px solid #ff00ff;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    background: #3838e7;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+/* Hover effect for the answer button*/
+/* .btn:hover{
+     background: #3838e7;
+    color: #fff;
+} */
+ #next-btn{
+    display: none;
+    background: #000080;;
+    color: #fff;
+    font-weight: 700;
+    width: 150px;
+    padding: 7px;
+    margin: 15px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+/* Hover effect for the next button*/
+#next-btn:hover{
+    background-color: #3838e7;
+}
+/* Correct answer (JavaScript)*/
+.correct{
+    background: #4ee18e;
+    color: #000;
+}
+/* Incorrect answer (JavaScript)*/
+.incorrect{
+    background: #f85555;
+    color: #fff;
+}
